@@ -5,5 +5,3 @@ urlpatterns = [
     path("", index, name="index"),
     path("faq/", faq, name="faq"),
 ]
-
-
