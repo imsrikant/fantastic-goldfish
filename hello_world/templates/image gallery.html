@@ -1,0 +1,37 @@
+{% load static %}
+<section class="photo-gallery mb-4">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8 col-xl-6 text-center mx-auto">
+        <h2>Helping Children</h2>
+        <p class="w-lg-50">
+          <span style="color: rgba(33, 37, 41, 0.77);">Each photo tells a story of hope, resilience, and the positive impact we're making together.&nbsp;</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Start: Photos -->
+    <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
+      <div class="col item">
+        <a href="assets/img/gallery-image-1.jpg"><img class="img-fluid" alt="children, infant, girl" src="{% static 'img/gallery-image-1.jpg' %}" /></a>
+      </div>
+      <div class="col item">
+        <a href="{% static 'img/gallery-image-2.jpg' %}"><img class="img-fluid" alt="girl, student, girl student" src="{% static 'img/gallery-image-2.jpg' %}" /></a>
+      </div>
+      <div class="col item">
+        <a href="{% static 'img/gallery-image-3.jpg' %}"><img class="img-fluid" alt="school, class room, children" src="{% static 'img/gallery-image-3.jpg' %}" /></a>
+      </div>
+      <div class="col item">
+        <a href="{% static 'img/gallery-image-4.jpg' %}"><img class="img-fluid" alt="children, infants, india" src="{% static 'img/gallery-image-4.jpg' %}" /></a>
+      </div>
+      <div class="col item">
+        <a href="{% static 'img/gallery-image-5.jpg' %}"><img class="img-fluid" alt="boy, school, laughing" src="{% static 'img/gallery-image-5.jpg' %}" /></a>
+      </div>
+      <div class="col item">
+        <a href="{% static 'img/gallery-image-6.jpg' %}"><img class="img-fluid" alt="children, infants, boys" src="{% static 'img/gallery-image-6.jpg' %}" /></a>
+      </div>
+    </div>
+    <!-- End: Photos -->
+  </div>
+</section>
+<!-- End: Lightbox Gallery -->
