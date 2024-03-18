@@ -28,3 +28,16 @@ def contact(request):
     }
     return render(request, "contact.html", context)
 
+
+
+def terms(request):
+    context = {
+        "title": "Terms of Service",
+    }
+    return render(request, "terms.html", context)
+
+def privacy(request):
+    context = {
+        "title": "Privacy Policy",
+    }
+    return render(request, "privacy.html", context)
