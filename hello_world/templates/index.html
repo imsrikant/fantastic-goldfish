@@ -1,35 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
 
-
-{% block con %}
-    
-{% endblock con %}
-    
-
-{% comment %} <!DOCTYPE html>
-
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Skils For Smiles</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="manifest" href="/manifest.json?h=eed4d16da80411bc190c3c04527f71d5" crossorigin="use-credentials" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=a56fc09708a947afaa2c93934e5a2ae3" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" />
-  </head>
-  <body>
+{% block content %}
     <main>
       <div class="carousel slide" data-bs-ride="false" id="carousel-1">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100 d-block" src="/assets/img/slider/slider-1.jpg?h=96923fcc804189fa9f7e3106e12c2818" alt="Slide Image" />
+            <img class="w-100 d-block" src="{% static 'img/slider/slider-1.jpg' %}" alt="Slide Image" />
           </div>
           <div class="carousel-item">
-            <img class="w-100 d-block" src="/assets/img/slider/slider-2.jpg?h=4257f25d6912da798ecba142676c90f5" alt="Slide Image" />
+            <img class="w-100 d-block" src="{% static 'img/slider/slider-2.jpg' %}" alt="Slide Image" />
           </div>
           <div class="carousel-item">
-            <img class="w-100 d-block" src="/assets/img/slider/slider-3.jpg?h=4257f25d6912da798ecba142676c90f5" alt="Slide Image" />
+            <img class="w-100 d-block" src="{% static 'img/slider/slider-3.jpg' %}" alt="Slide Image" />
           </div>
         </div>
         <div>
@@ -43,12 +26,8 @@
         </div>
       </div>
     </main>
-    <section class="container-fluid d-grid justify-content-center gap-2 my-2 d-md-block py-2 my-4 text-center align-items-center bg-warning" style="background: var(--bs-btn-bg)">
-      <h1><span style="color: rgb(64, 64, 64)">Do you want to volunteer</span>&nbsp;<span style="color: rgb(64, 64, 64)">?</span></h1>
-      <button class="btn btn-outline-success" type="button">Register</button>
-    </section>
-    <!-- Start: Lightbox Gallery -->
-    <section data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="photo-gallery mb-4">
+    
+<section data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="photo-gallery mb-4">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -83,6 +62,30 @@
       </div>
     </section>
     <!-- End: Lightbox Gallery -->
+{% endblock content %}
+
+
+{% comment %} <!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Skils For Smiles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="manifest" href="/manifest.json?h=eed4d16da80411bc190c3c04527f71d5" crossorigin="use-credentials" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=a56fc09708a947afaa2c93934e5a2ae3" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" />
+  </head>
+  <body>
+
+
+    <section class="container-fluid d-grid justify-content-center gap-2 my-2 d-md-block py-2 my-4 text-center align-items-center bg-warning" style="background: var(--bs-btn-bg)">
+      <h1><span style="color: rgb(64, 64, 64)">Do you want to volunteer</span>&nbsp;<span style="color: rgb(64, 64, 64)">?</span></h1>
+      <button class="btn btn-outline-success" type="button">Register</button>
+    </section>
+    <!-- Start: Lightbox Gallery -->
+
     <!-- Start: Features Centered Icons -->
     <div class="container py-4 py-xl-5">
       <div class="row mb-5">
@@ -202,4 +205,5 @@
     <a class="link-success cd-top" href="#top">Top</a><!-- End: Scroll to top -->
 
   </body>
-</html> {% endcomment %}
+</html>
+{% endcomment %}
