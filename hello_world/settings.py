@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_browser_reload",
-    "user"
+    "user",
+    "ngo",
+    "problem",
 ]
 
 MIDDLEWARE = [
@@ -144,4 +146,3 @@ MEDIA_ROOT = BASE_DIR / "hello_world" / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "user.User"
-
