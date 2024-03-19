@@ -47,8 +47,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_browser_reload",
     "users",
-    "ngos",
-    "problems",
+    # "ngos",
+    # "problems",
 ]
 
 MIDDLEWARE = [
