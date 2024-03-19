@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 def user_signup(request):
     signup_context = {"title": "Sign Up"}
+    print(request.user)
     return render(request, "user/signup.html", signup_context)
 
 def user_login(request):

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container" style="position:absolute; left:0; right:0; top: 50%; transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%);">
+  <div class="container py-3">
     <div class="row justify-content-center">
       <div class="col-md-10 col-lg-9 col-xl-9 col-xxl-7">
         <div class="card shadow-lg o-hidden border-0 my-5">
@@ -24,7 +24,7 @@
                     <div class="row mb-3">
                       <p id="errorMsg" class="text-danger" style="display:none;">Paragraph</p>
                     </div>
-                    <!-- End: Error Message --><button class="btn btn-primary d-block btn-user w-100" id="submitBtn" type="submit">Login</button><hr />
+                    <!-- End: Error Message --><button class="btn btn-outline-primary d-block btn-user w-100" id="submitBtn" type="submit">Login</button><hr />
                   </form>
                   <!-- End: Login Form -->
                   <!-- Start: Forgot Password -->
@@ -48,18 +48,18 @@
       let email = document.getElementById('email')
       let submitBtn = document.getElementById('submitBtn')
       let errorMsg = document.getElementById('errorMsg')
-      
+
       function displayErrorMsg(e) {
         errorMsg.style.display = 'block'
         errorMsg.innerHTML = e
         submitBtn.disabled = true
       }
-      
+
       function hideErrorMsg() {
         errorMsg.style.display = 'none'
         submitBtn.disabled = false
       }
-      
+
       // Validate email upon change
       email.addEventListener('change', function () {
         // Check if the email is valid using a regular expression (string@string.string)
