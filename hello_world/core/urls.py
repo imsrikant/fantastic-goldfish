@@ -1,5 +1,5 @@
 from django.urls import path
-from hello_world.core.views import index, faq, about, contact, terms, privacy, login, signin
+from hello_world.core.views import index, faq, about, contact, terms, privacy, login, signup
 
 urlpatterns = [
     path("", index, name="index"),
@@ -9,6 +9,5 @@ urlpatterns = [
     path("terms/", terms, name="terms"),
     path("privacy/", privacy, name="privacy"),
     path("login/", login, name="login"),
-    path("signin/", signin, name="signin"),
+    path("signup/", signup, name="signup"),
 ]
-
