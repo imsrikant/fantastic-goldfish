@@ -46,7 +46,7 @@ def user_login(request):
             else:
                 login_context["error"] = "Incorrect password"
         except User.DoesNotExist:
-            login_context["error"] = "User does not exist"
+            login_context["error"] = "Email does not exist"
     return render(request, "user/login.html", login_context)
 
 
