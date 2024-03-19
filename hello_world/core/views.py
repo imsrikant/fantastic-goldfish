@@ -29,7 +29,6 @@ def contact(request):
     return render(request, "contact.html", context)
 
 
-
 def terms(request):
     context = {
         "title": "Terms of Service",
@@ -50,6 +49,6 @@ def login(request):
 
 def signup(request):
     context = {
-        "title": "Signup",
+        "title": "Sign Up",
     }
     return render(request, "signup.html", context)

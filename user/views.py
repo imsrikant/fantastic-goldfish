@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def user_signup(request):
-    signup_context = {"title": "Signup"}
+    signup_context = {"title": "Sign Up"}
     return render(request, "user/signup.html", signup_context)
 
 def user_login(request):
