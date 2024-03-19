@@ -6,6 +6,7 @@ from .models import User
 
 def user_signup(request):
     signup_context = {"title": "Sign Up"}
+    print(request.user)
     if request.user.is_authenticated:
         return redirect("/")
     if request.method == "POST":
