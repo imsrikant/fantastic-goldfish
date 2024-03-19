@@ -23,6 +23,9 @@
                     <!-- Start: Error Message -->
                     <div class="row mb-3">
                       <p id="errorMsg" class="text-danger" style="display:none;">Paragraph</p>
+                      {% if error %}
+                        <p class="text-danger">{{ error }}</p>
+                      {% endif %}
                     </div>
                     <!-- End: Error Message --><button class="btn btn-outline-primary d-block btn-user w-100" id="submitBtn" type="submit">Login</button><hr />
                   </form>
@@ -48,18 +51,18 @@
       let email = document.getElementById('email')
       let submitBtn = document.getElementById('submitBtn')
       let errorMsg = document.getElementById('errorMsg')
-
+      
       function displayErrorMsg(e) {
         errorMsg.style.display = 'block'
         errorMsg.innerHTML = e
         submitBtn.disabled = true
       }
-
+      
       function hideErrorMsg() {
         errorMsg.style.display = 'none'
         submitBtn.disabled = false
       }
-
+      
       // Validate email upon change
       email.addEventListener('change', function () {
         // Check if the email is valid using a regular expression (string@string.string)
