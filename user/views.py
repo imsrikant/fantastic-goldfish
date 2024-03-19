@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect
 from .models import User
+
 # Create your views here.
 
 
 def user_signup(request):
     signup_context = {"title": "Sign Up"}
+    if request.user.is_authenticated:
+        return redirect("/")
     if request.method == "POST":
         first_name = request.POST.get("first_name")
         last_name = request.POST.get("last_name")
@@ -33,6 +36,8 @@ def user_signup(request):
 
 
 def user_login(request):
+    if request.user.is_authenticated:
+        return redirect("/")
     login_context = {"title": "Login"}
     if request.method == "POST":
         email = request.POST.get("email")
