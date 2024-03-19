@@ -41,3 +41,16 @@ def privacy(request):
         "title": "Privacy Policy",
     }
     return render(request, "privacy.html", context)
+
+def login(request):
+    context = {
+        "title": "Login",
+    }
+    return render(request, "login.html", context)
+
+def signin(request):
+    context = {
+        "title": "Signin",
+    }
+    return render(request, "signin.html", context)
+
