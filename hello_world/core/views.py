@@ -48,9 +48,8 @@ def login(request):
     }
     return render(request, "login.html", context)
 
-def signin(request):
+def signup(request):
     context = {
-        "title": "Signin",
+        "title": "Signup",
     }
-    return render(request, "signin.html", context)
-
+    return render(request, "signup.html", context)
