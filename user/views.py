@@ -1,5 +1,5 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from .models import User
 # Create your views here.
 
 
@@ -10,6 +10,7 @@ def user_signup(request):
 
 def user_login(request):
     login_context = {"title": "Login"}
+
     return render(request, "user/login.html", login_context)
 
 
