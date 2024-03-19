@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import user_signup, user_login, user_forgot_password
+from ..user.views import user_signup, user_login, user_forgot_password
 
 urlpatterns = [
     path("signup/", user_signup, name="user_signup"),

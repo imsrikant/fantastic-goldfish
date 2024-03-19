@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     "django_browser_reload",
     "users",
     "ngo",
-    "user",
     "problem",
 ]
 
